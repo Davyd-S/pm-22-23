@@ -182,7 +182,7 @@
 }
 
 .Name-paragraph2{
-  margin-top: -20px;
+  margin-top: -10px;
   letter-spacing: 2px;
 }
 
@@ -281,17 +281,19 @@
 }
 
 .font1{
-  font-size: 22px;
-  font-weight: bold;
-  font-family: Arial Narrow, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
   margin-top: -8px;
 }
 
-.font{
+.font {
   font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-  display: block;
+  font-size: 19px;
+  margin-bottom: 40px;
   text-align: center;
+  white-space: pre-line;
+  word-spacing: 100px;
 }
 
 .right-layout2{
@@ -301,32 +303,33 @@
 }
 
 .diagram {
-  position: relative;
-  height: 80px;
-  width: 80px;
+  height: 90px;
+  width: 90px;
   border-radius: 50%;
-  background: conic-gradient(#ff6d03 67%, lightgray 0);
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.diagram::after {
-  content: "65%";
+.diagram-on-diagram {
+  margin-top: -84px;
+  margin-left: 6px;
   display: flex;
-  font-family: Arial Narrow, sans-serif;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 22px;
+  font-family: 'Montserrat', sans-serif;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  height: 70px;
-  width: 70px;
+  height: 78px;
+  width: 78px;
   border-radius: 50%;
   background-color: white;
 }
 
 .text-diagram{
+  align-self: center;
   margin-right: 10px;
+  margin-left: 10px;
+}
+
+.full-diagram{
   margin-left: 10px;
 }
