@@ -26,7 +26,7 @@
 .right-layout {
   flex: 1;
   margin-left: 10px;
-  margin-right: 125px;
+  margin-right: 136px;
   background-color: #ffffff;
 }
 
@@ -176,9 +176,15 @@
   display: flex;
 }
 
-.time2-paragraph{
+.section-title-2 .sub-paragraph {
+  position: relative;
+}
+
+.time2-paragraph {
   font-weight: normal;
-  margin-left: 370px;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .Name-paragraph2{
