@@ -1,3 +1,14 @@
+*{
+  opacity: 0;
+  transform: translateY(20px); /* Зсув вниз */
+  transition: opacity 1s ease, transform 1s ease; /* Анімація */
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0); /* Повернення на початкове місце */
+}
+
 .container {
   display: flex;
   margin-top: 80px;
@@ -268,25 +279,32 @@
   margin-left: 100px;
 }
 
-.bar{
+.bar {
   background-color: #c5c5c5;
   height: 13px;
-  width: 167px;
+  width: 0;
   margin-left: 6px;
+  position: relative;
+  transition: width 1s ease-in-out;
 }
 
-.bar-on-bar{
+.bar-on-bar {
   background-color: #ff6d00;
   height: 13px;
-  margin-left: -167px;
+  width: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: width 1s ease-in-out;
 }
 
-.text-bar{
+
+.text-bar {
   display: flex;
   margin-top: 40px;
 }
 
-.font1{
+.font1 {
   font-size: 20px;
   font-weight: 600;
   font-family: 'Montserrat', sans-serif;
@@ -307,12 +325,26 @@
   margin-right: 100px;
   margin-left: -100px;
 }
+.text-diagram {
+  align-self: center;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.font {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: -8px;
+}
 
 .diagram {
   height: 90px;
   width: 90px;
   border-radius: 50%;
   display: flex;
+  background: conic-gradient(#ff6d03 0%, lightgray 0); /* Початковий стан */
+  transition: background 1s ease-in-out; /* Для плавної зміни фону */
 }
 
 .diagram-on-diagram {
@@ -330,12 +362,12 @@
   background-color: white;
 }
 
-.text-diagram{
+.text-diagram {
   align-self: center;
   margin-right: 10px;
   margin-left: 10px;
 }
 
-.full-diagram{
+.full-diagram {
   margin-left: 10px;
 }

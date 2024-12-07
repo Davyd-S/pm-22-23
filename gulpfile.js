@@ -38,7 +38,6 @@ gulp.task('images', function() {
         .pipe(gulp.dest('dist/images'));
 });
 
-
 gulp.task('serve', function() {
     browserSync.init({
         server: './dist'
@@ -50,5 +49,21 @@ gulp.task('serve', function() {
     gulp.watch('src/images/*', gulp.series('images'));
 });
 
+// Копіювання JSON-файлів
+gulp.task('copy-json', function () {
+    return gulp.src('./src/data/*.json')
+        .pipe(gulp.dest('./dist/data'))
+        .pipe(browserSync.stream()); // Оновлення сторінки
+});
 
-gulp.task('default', gulp.series('html', 'scss', 'js', 'images', 'serve'));
+// Запуск сервера з автоматичним оновленням
+gulp.task('serve', function () {
+    browserSync.init({
+        server: {
+            baseDir: './dist'
+        }
+    });
+    gulp.watch('./src/data/*.json', gulp.series('copy-json'));
+});
+
+gulp.task('default', gulp.series('html', 'scss', 'js', 'images', 'copy-json', 'serve'));

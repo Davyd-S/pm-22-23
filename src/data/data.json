@@ -1,0 +1,42 @@
+{
+  "education": [
+    {
+      "major": "Master of creative arts",
+      "university": "University Name",
+      "years": "2018-Present",
+      "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod facilisis."
+    },
+    {
+      "major": "Master of design",
+      "university": "University name",
+      "years": "2015-2017",
+      "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod facilisis."
+    },
+    {
+      "major": "Marketing officer",
+      "university": "University name",
+      "years": "2010-2012",
+      "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod facilisis."
+    }
+  ],
+  "work": [
+    {
+      "mayor": "WEB DESIGNER",
+      "year": "2018 - Present",
+      "company-name": "Company Name / Location",
+      "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida."
+    },
+    {
+      "mayor": "GRAPHIC DESIGNER",
+      "year": "2015-2018",
+      "company-name": "Company Name / Location",
+      "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida."
+    },
+    {
+      "mayor": "MARKETING MANAGER",
+      "year": "2010-2015",
+      "company-name": "Company Name / Location",
+      "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida."
+    }
+  ]
+}
